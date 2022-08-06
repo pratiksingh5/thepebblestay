@@ -93,13 +93,18 @@ nav {
   /* position: relative; */
 }
 
+.mobile-img{
+  display: none;
+}
+
 .hero-section-overlay {
   position: absolute;
   top: 0;
   
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background: linear-gradient(to top,rgba(0, 0, 0, 1.5), rgba(0, 0, 0, 0.3));
+  /* background-color: rgba(0, 0, 0, 0.4); */
   padding-top: 17rem;
   padding-left: 7rem;
   border-radius: 20px;
@@ -428,6 +433,12 @@ footer ul>li{
   /* background-color: red; */
 }
 
+.benefit-box{
+  border: solid 1px grey;
+  height: 100%;
+  padding: 2rem;
+  border-radius: 10px;
+}
 
 #videocontainer{
   position: relative;
@@ -635,7 +646,8 @@ footer ul>li{
   }
 
   .hero-section-overlay {
-    padding-left: 2rem;
+    padding-left: 2.5rem;
+    padding-top: 9rem;
   }
 
   .mail-section p {
@@ -660,5 +672,17 @@ footer ul>li{
   }
   .customer-text h3{
     font-size: 1.3rem;
+  }
+
+  .laptop-img{
+    display: none;
+  }
+
+  
+  .mobile-img{
+    display: block;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 15px;
   }
 }
