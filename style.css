@@ -29,7 +29,10 @@ nav {
   height: 17vh;
   align-items: center;
 }
-
+.lead{
+  width: 80%;
+  font-size: 1.3rem;
+}
 .links a {
   margin-left: 20px;
   text-decoration: none;
@@ -214,11 +217,12 @@ nav {
   font-weight: 700;
   font-size: 3rem;
   text-align: center;
+  color: #f45047;
 }
 
 .content-text{
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 .heading-exp{
@@ -226,29 +230,31 @@ nav {
   text-align: left;
   /* line-height: 6rem; */
   font-weight: 700;
-  color: #F96C65;
+  color: #383838;
 }
 
 .box{
-  min-height: 280px;
-  background: #FEB9B6;
-  border-radius: 10px;
-  margin: 2rem auto;
+  /* min-height: 280px; */
+  /* background: #FEB9B6; */
+  /* border-radius: 10px; */
+  margin: 0 auto;
+  margin-top: 1.4rem;
+  border-bottom: solid 1px grey;
+  padding-bottom: 2rem;
+  margin-bottom: 5rem;
+  /* background-color: aqua; */
 }
 #layer1{
-  width: 100%;
-  background-color: #FFDFDD;
+  width: 72%;
   text-align: center;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: rgba(252, 120, 120, 0.1) 0px 4px 16px, rgba(255, 97, 97, 0.1) 0px 8px 24px, rgba(249, 128, 128, 0.1) 0px 16px 56px;
-  animation: cb 3s ease-in-out 1s infinite alternate both;
-  /* position: relative;
-  right: 10px;
-  top: 10px;
-  text-align: center;
-  padding: 1rem; */
+  /* align-items: center; */
+  justify-content: space-between;
+}
+#right{
+  width: 500px;
+  text-align: left;
+  font-size: 1.3rem;
 }
 #box span{
   margin: 0 10px;
@@ -298,7 +304,7 @@ nav {
   background-color: #FFDFDD;
   }
   to{
-  background-color: #ff7069a9;
+  background-color: #ffb0aca9;
 
   }
   
@@ -489,12 +495,13 @@ footer ul>li{
   justify-content: center;
 }
 .booking-card{
-  background-color:#fbfbfb; 
+  /* background-color:#fbfbfb;  */
   position: relative;
   border: none;
   padding-top: 5rem;
   padding-bottom: 2.5rem;
   min-height: 485px;
+  box-shadow: 0px 0 14px 0px rgba(109, 109, 109, 0.043) !important;
   /* padding: 3rem 0; */
 
 }
@@ -546,7 +553,7 @@ footer ul>li{
   height: 100%;
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: rgba(185, 191, 197, 0.2) 0px 8px 24px;
+  /* box-shadow: rgba(185, 191, 197, 0.2) 0px 8px 24px; */
 }
 .teamImg{
   width: 100%;
@@ -570,61 +577,29 @@ footer ul>li{
 
 .testimonial{
   text-align: center;
-  margin: 80px 30px 40px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(196, 196, 196, 0.701);
+  /* margin: 80px 30px 40px; */
+  border-radius: 20px;
+  /* box-shadow: 0 0 10px rgba(196, 196, 196, 0.701); */
+  width: 50% !important;
+  border: solid 1px rgba(211, 211, 211, 0.9);
+  margin: 2rem auto;
+  padding: 3rem;
+  height: 200px;
+  margin-bottom: 4rem;
+}
 
-  /* border: solid 1px grey; */
-  /* position: relative; */
-  /* padding-top: 60px; */
-}
-.testimonial .pic{
-  
-  width: 80px;
-  height: 80px;
-  margin: 0 auto;
-  border-radius: 50%;
-  overflow: hidden;
-  position: relative;
-  transform: translate(0,-50%);
-  /* left: 50%; */
-  /* transform: translate(-50%,0); */
-  /* left:40%; */
-  /* top:-15%; */
-  /* position: absolute; */
-}
-.testimonial .pic img{
-  width: 100%;
-  height: auto; 
-  /* position: absolute; */
+.description p{
+  line-height: 1.9rem;
+  letter-spacing: 0.1px;
 }
 
 .testimonial .description{
-  padding: 15px 25px;
   font-size: 15px;
-  color: rgb(247, 240, 240);
-  line-height: 30px;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
- background-color:#F96C65;
-  margin-top: 15px;
-  min-height: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* height: 220px; */
 }
 .testimonial .title{
-  display: block;
-  /* background-color: blue; */
-  margin-top: -2rem;
-  /* margin: 0 0 7px 0; */
-  /* margin-top: 1rem; */
   font-size: 1.6rem;
   font-weight: 500;
   color: #1f1f1f;
-  /* letter-spacing: 1px; */
-  /* text-transform: uppercase; */
 }
 
 .owl-theme .owl-controls{ margin-top: 0; }
