@@ -101,8 +101,11 @@
             <p><em> “Prebook your stay at a early access discount and support the cause of sustainable vacations”.</em>
             </p>
             <div class="form">
-                <input type="email" placeholder="Email Address">
-                <input type="submit" value="Join" class="pink-btn">
+                <form method="POST" name="Responses">
+                    <input type="email" name="Email" placeholder="Email Address" required>
+                    <input type="submit" value="Join" class="pink-btn">
+                </form>
+                
             </div>
         </div>
         
@@ -110,12 +113,6 @@
         <div class="box" id="layer1" data-aos="fade-up">
             <div id="left"><h1 style="text-align: left;font-weight:600;">Pebble Stay<br>Partner Program</h1></div>
             <div id="right">The Pebble Stay Partner program is a crowdfunding campaign which will be launched on the 1st of September. Join now to get a chance to prebook your stay with us and further the cause of sustainable vacations.</div>
-            <!-- <div class="container-fluid py-5">
-                <h1 class="display-5 fw-bold"> <span id="a">Pebble </span><span id="b">Stay</span><span id="c">Partner</span><span id="d">Program</span>  </h1>
-                <br>
-                <p class="col-md-8 fs-4">The Pebble Stay Partner program is a crowdfunding campaign which will be launched on the 1st of September. Join now to get a chance to prebook your stay with us and further the cause of sustainable vacations.
-                </p>
-            </div> -->
         </div>
         <br><br><br><br>
 
@@ -248,7 +245,7 @@
         <div class="booking-section">
             <h1 class="heading" data-aos="fade-up">How can you contribute?</h1>
             <br>
-            <p style="text-align: center; font-size: 1.3rem; width: 55%; margin: 0 auto;" data-aos="fade-up">Prebook at an exclusive discount in our crowdfunding campaign and plan your vacation on a date of your convenience</p>
+            <p style="text-align: center; font-size: 1.3rem; margin: 0 auto;" data-aos="fade-up" class="desc">Prebook at an exclusive discount in our crowdfunding campaign and plan your vacation on a date of your convenience</p>
             <br><br>
             <div style="margin: 0 auto; text-align: center;">
                 <h2 data-aos="fade-up" style="text-align: center;display: inline-block ;font-weight: 500;color: #383838;text-transform: uppercase;letter-spacing: 1px; border: solid 1px rgb(202, 202, 202);padding: 1rem 3rem;">Prebooking Tiers</h2>
@@ -262,27 +259,31 @@
                     <div class="card mb-4 rounded-3 shadow-sm booking-card">
                         <div class="card-body">
                             <div class="batch" style="background-color: #71B880"><span>Recommended</span></div>
-                            <h2>Stay a Night</h2>
-                            <ul class="list-unstyled mt-3 mb-4" style="text-align: left; padding:0 2rem">
-                                <li>
-                                    <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
-                                            alt="">Get a 1 night stay free
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
-                                            alt="">Upto 2 people maximum
-                                    </div>
-                                </li>
-                                <!-- <li>
-                                    <div class="checkbox"><img src="./assets/unchecked.png" style="margin-left:6px" width="18px"
-                                            alt="">Including any special experience eg. anniversary, birthday, bonfire, bbq night etc.
-                                    </div>
-                                </li> -->
-
-                            </ul>
-                            <h1 class="card-title pricing-card-title">Rs 3500</h1>
-                            <button type="button" class="w-100 btn btn-lg book-btn mt-2">JOIN NOW</button>
+                            <div class="card-content">
+                                <h2>Stay a Night</h2>
+                                <ul class="list-unstyled mt-3 mb-4" style="text-align: left">
+                                    <li>
+                                        <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
+                                                alt="">Get a 1 night stay free
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
+                                                alt="">Upto 2 people maximum
+                                        </div>
+                                    </li>
+                            
+    
+                                </ul>
+                            </div>
+                           
+                            <div class="price">
+                                <h1 class="card-title pricing-card-title">Rs 3500</h1>
+                                <a href="#join">
+                                    <button type="button" class="w-100 book-btn mt-2">JOIN NOW</button>
+                                </a>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -291,46 +292,53 @@
                     <div class="card mb-4 rounded-3 shadow-sm booking-card">
                         <div class="card-body">
                             <div class="batch" style="background-color: #71B880"><span>Recommended</span></div>
-                            <h2>The Double Value Special</h2>
-                            <ul class="list-unstyled mt-3 mb-4" style="text-align: left; padding:0 2rem">
-                                <li>
-                                    <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
-                                            alt="">Get a 2 night stay free
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
-                                            alt="">Includes special experiences like Anniversaries, date night, birthdays, bbq night, bonfire
-                                    </div>
-                                </li>
-                                
-                                <li>
-                                    <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px" 
-                                            alt="">5% discount on meals
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
-                                            alt="">Special souvenir gift package
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
-                                            alt="">Upto 2 people maximum
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
-                                            alt="">5% discount on all future bookings at The Pebble Stay
-                                    </div>
-                                </li>
-
-                            </ul>
+                            <div class="card-content">
+                                <h2>The Double Value Special</h2>
+                                <ul class="list-unstyled mt-3 mb-4" style="text-align: left;">
+                                    <li>
+                                        <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
+                                                alt="">Get a 2 night stay free
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
+                                                alt="">Includes special experiences like Anniversaries, date night, birthdays, bbq night, bonfire
+                                        </div>
+                                    </li>
+                                    
+                                    <li>
+                                        <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px" 
+                                                alt="">5% discount on meals
+                                        </div>
+                                    </li>
+    
+                                    <li>
+                                        <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
+                                                alt="">Special souvenir gift package
+                                        </div>
+                                    </li>
+    
+                                    <li>
+                                        <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
+                                                alt="">Upto 2 people maximum
+                                        </div>
+                                    </li>
+    
+                                    <li>
+                                        <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
+                                                alt="">5% discount on all future bookings at The Pebble Stay
+                                        </div>
+                                    </li>
+    
+                                </ul>
+                            </div>
+                           <div class="price">
                             <h1 class="card-title pricing-card-title">Rs 5000</h1>
-                            <button type="button" class="w-100 btn btn-lg book-btn mt-2">JOIN NOW</button>
+                            <a href="#join">
+                                <button type="button" class="w-100 book-btn mt-2">JOIN NOW</button>
+                            </a>
+                           </div>
+                        
                         </div>
                     </div>
                 </div>
@@ -339,46 +347,53 @@
                     <div class="card mb-4 rounded-3 shadow-sm booking-card">
                         <div class="card-body">
                             <div class="batch" style="background-color: #71B880"><span>Recommended</span></div>
-                            <h2>The Wolf Pack Friends package</h2>
-                            <ul class="list-unstyled mt-3 mb-4" style="text-align: left; padding:0 2rem">
-                                <li>
-                                    <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
-                                            alt="">Get a 2 night stay free
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
-                                            alt="">Includes special experiences like birthdays, bbq night, bonfire
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
-                                            alt="">5% discount on meals
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
-                                            alt="">Special souvenir gift package
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
-                                            alt="">Upto 4 people maximum
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
-                                            alt="">5% discount on all future bookings at The Pebble Stay
-                                    </div>
-                                </li>
-
-
-                            </ul>
+                            <div class="card-content">
+                                <h2>The Wolf Pack Friends package</h2>
+                                <ul class="list-unstyled mt-3 mb-4" style="text-align: left;">
+                                    <li>
+                                        <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
+                                                alt="">Get a 2 night stay free
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
+                                                alt="">Includes special experiences like birthdays, bbq night, bonfire
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
+                                                alt="">5% discount on meals
+                                        </div>
+                                    </li>
+    
+                                    <li>
+                                        <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
+                                                alt="">Special souvenir gift package
+                                        </div>
+                                    </li>
+    
+                                    <li>
+                                        <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
+                                                alt="">Upto 4 people maximum
+                                        </div>
+                                    </li>
+    
+                                    <li>
+                                        <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
+                                                alt="">5% discount on all future bookings at The Pebble Stay
+                                        </div>
+                                    </li>
+    
+    
+                                </ul>
+                            </div>
+                          <div class="price">
                             <h1 class="card-title pricing-card-title">Rs 8000</h1>
-                            <button type="button" class="w-100 btn btn-lg book-btn mt-2">JOIN NOW</button>
+                            <a href="#join">
+                                <button type="button" class="w-100 book-btn mt-2">JOIN NOW</button>
+                            </a>
+                          </div>
+                      
                         </div>
                     </div>
                 </div>
@@ -387,46 +402,53 @@
                     <div class="card mb-4 rounded-3 shadow-sm booking-card">
                         <div class="card-body">
                             <div class="batch" style="background-color: #71B880"><span>Recommended</span></div>
-                            <h2>The Happy Family package</h2>
-                            <ul class="list-unstyled mt-3 mb-4" style="text-align: left; padding:0 2rem">
-                                <li>
-                                    <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
-                                            alt="">Get a 2 night stay free
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
-                                            alt="">Includes special experiences like birthdays, bbq night, bonfire
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
-                                            alt="">5% discount on meals
-                                    </div>
-                                </li>
+                            <div class="card-content">
+                                <h2>The Happy Family package</h2>
+                                <ul class="list-unstyled mt-3 mb-4" style="text-align: left;">
+                                    <li>
+                                        <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
+                                                alt="">Get a 2 night stay free
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
+                                                alt="">Includes special experiences like birthdays, bbq night, bonfire
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
+                                                alt="">5% discount on meals
+                                        </div>
+                                    </li>
+    
+                                    <li>
+                                        <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
+                                                alt="">Special souvenir gift package
+                                        </div>
+                                    </li>
+    
+                                    <li>
+                                        <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
+                                                alt="">Upto 4 people maximum
+                                        </div>
+                                    </li>
+    
+                                    <li>
+                                        <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
+                                                alt="">5% discount on all future bookings at The Pebble Stay
+                                        </div>
+                                    </li>
+    
+    
+                                </ul>
+                            </div>
 
-                                <li>
-                                    <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
-                                            alt="">Special souvenir gift package
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
-                                            alt="">Upto 4 people maximum
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
-                                            alt="">5% discount on all future bookings at The Pebble Stay
-                                    </div>
-                                </li>
-
-
-                            </ul>
-                            <h1 class="card-title pricing-card-title">Rs 10000</h1>
-                            <button type="button" class="w-100 btn btn-lg book-btn mt-2">JOIN NOW</button>
+                            <div class="price">
+                                <h1 class="card-title pricing-card-title">Rs 10000</h1>
+                                <a href="#join">
+                                    <button type="button" class="w-100 book-btn mt-2">JOIN NOW</button>
+                                </a>
+                            </div>  
                         </div>
                     </div>
                 </div>
@@ -435,46 +457,54 @@
                     <div class="card mb-4 rounded-3 shadow-sm booking-card">
                         <div class="card-body">
                             <div class="batch" style="background-color: #71B880"><span>Recommended</span></div>
-                            <h2>The Group Special package</h2>
-                            <ul class="list-unstyled mt-3 mb-4" style="text-align: left; padding:0 2rem">
-                                <li>
-                                    <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
-                                            alt="">Get a 3 night stay free
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
-                                            alt="">Includes special experiences like Anniversaries, date night, birthdays, bbq night, bonfire.
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
-                                            alt="">10% discount on meals
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
-                                            alt="">Special souvenir gift package
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
-                                            alt="">Upto 8 people maximum
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
-                                            alt="">10% discount on all future bookings at The Pebble Stay
-                                    </div>
-                                </li>
-
-
-                            </ul>
-                            <h1 class="card-title pricing-card-title">Rs 21000</h1>
-                            <button type="button" class="w-100 btn btn-lg book-btn mt-2">JOIN NOW</button>
+                            <div class="card-content">
+                                <h2>The Group Special package</h2>
+                                <ul class="list-unstyled mt-3 mb-4" style="text-align: left;">
+                                    <li>
+                                        <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
+                                                alt="">Get a 3 night stay free
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
+                                                alt="">Includes special experiences like Anniversaries, date night, birthdays, bbq night, bonfire.
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
+                                                alt="">10% discount on meals
+                                        </div>
+                                    </li>
+    
+                                    <li>
+                                        <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
+                                                alt="">Special souvenir gift package
+                                        </div>
+                                    </li>
+    
+                                    <li>
+                                        <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
+                                                alt="">Upto 8 people maximum
+                                        </div>
+                                    </li>
+    
+                                    <li>
+                                        <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
+                                                alt="">10% discount on all future bookings at The Pebble Stay
+                                        </div>
+                                    </li>
+    
+    
+                                </ul>
+                            </div>
+                            <div class="price">
+                                <h1 class="card-title pricing-card-title">Rs 21000</h1>
+                                <a href="#join">
+                                    <button type="button" class="w-100 book-btn mt-2">JOIN NOW</button>
+                                </a>
+                            </div>
+                           
+                            
                         </div>
                     </div>
                 </div>
@@ -483,52 +513,60 @@
                     <div class="card mb-4 rounded-3 shadow-sm booking-card">
                         <div class="card-body">
                             <div class="batch" style="background-color: #71B880"><span>Recommended</span></div>
-                            <h2>The Staycation package</h2>
-                            <ul class="list-unstyled mt-3 mb-4" style="text-align: left; padding:0 2rem">
-                                <li>
-                                    <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
-                                            alt="">Get a 7 night stay free
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
-                                            alt="">Includes special experiences like Anniversaries, date night, birthdays, bbq night, bonfire.
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
-                                            alt="">10% discount on meals
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
-                                            alt="">Special souvenir gift package
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
-                                            alt="">Upto 4 people maximum
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
-                                            alt="">15% discount on all future bookings at The Pebble Stay
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
-                                            alt="">Special early access to future Pebble Stay properties
-                                    </div>
-                                </li>
-
-
-                            </ul>
+                            <div class="card-content">
+                                <h2>The Staycation package</h2>
+                                <ul class="list-unstyled mt-3 mb-4" style="text-align: left;">
+                                    <li>
+                                        <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
+                                                alt="">Get a 7 night stay free
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
+                                                alt="">Includes special experiences like Anniversaries, date night, birthdays, bbq night, bonfire.
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
+                                                alt="">10% discount on meals
+                                        </div>
+                                    </li>
+    
+                                    <li>
+                                        <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
+                                                alt="">Special souvenir gift package
+                                        </div>
+                                    </li>
+    
+                                    <li>
+                                        <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
+                                                alt="">Upto 4 people maximum
+                                        </div>
+                                    </li>
+    
+                                    <li>
+                                        <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
+                                                alt="">15% discount on all future bookings at The Pebble Stay
+                                        </div>
+                                    </li>
+    
+                                    <li>
+                                        <div class="checkbox"><img src="./assets/Checked Checkbox.png" width="30px"
+                                                alt="">Special early access to future Pebble Stay properties
+                                        </div>
+                                    </li>
+    
+    
+                                </ul>
+                            </div>
+                           <div class="price">
                             <h1 class="card-title pricing-card-title">Rs 50000</h1>
-                            <button type="button" class="w-100 btn btn-lg book-btn mt-2">JOIN NOW</button>
+                            <a href="#join">
+                                <button type="button" class="w-100 book-btn mt-2">JOIN NOW</button>
+                            </a>
+                           
+                           </div>
+                        
                         </div>
                     </div>
                 </div>
@@ -540,8 +578,11 @@
         <div id="benefits" style="margin-top: 4rem;">
             <h1 class="heading" data-aos="fade-up">Community Perks</h1>
             <br><br>
-            <h3 style="text-align: center;" data-aos="fade-up">If you prebook your stay with us, you would automatically be a part of the community with additional perks like
-            </h3>
+            <div style="margin: 0 auto; text-align:center;">
+                <h3 class="desc" style="text-align: center; font-size: 1.3rem;  margin: 0 auto;" data-aos="fade-up">If you prebook your stay with us, you would automatically be a part of the community with additional perks like
+                </h3>
+            </div>
+           
             <br><br>
             <!-- <h1 class="heading">Benefits for early access members</h1> -->
             <div class="container px-4 py-5" id="icon-grid">
@@ -585,15 +626,15 @@
 
     </main>
 
-    <br><br><br><br>
+    
 
     <div id="pebble-stay">
         <h1 class="heading" data-aos="fade-up">Why Pebble Stay?</h1>
         <br>
     
-        <p class="content-text" data-aos="fade-up">When you are contributing to us, you aren’t just contributing you are creating an impact
+        <p class="content-text desc" style="color: black; margin: 0 auto;" data-aos="fade-up">When you are contributing to us, you aren’t just contributing you are creating an impact
             towards the environment and helping the needy.</p>
-
+        <br><br>
         <div class="teams-container pebble-cont">
             <div class="team-member pebble">
                 <div class="team-member-img pebbleIcon" data-aos="fade-up">
@@ -642,7 +683,6 @@
                             <!-- <div class="pic">
                                 <img src="https://images.unsplash.com/photo-1484517186945-df8151a1a871?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwxNzI5MjU4fHxlbnwwfHx8fA%3D%3D&w=1000&q=80">
                             </div> -->
-                            <h3 class="title" >Arvind Kungar</h3>
                             
                             <div class="description">
                                 <p>
@@ -654,12 +694,13 @@
                                     <i style='font-size:24px' class='fab'>&#xf09a;</i>
                                 </div> -->
                             </div>
+                            <h3 class="title" >-Arvind Kungar</h3>
+
                         </div>
                         <div class="testimonial">
                             <!-- <div class="pic">
                                 <img src="https://images.unsplash.com/photo-1484517186945-df8151a1a871?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwxNzI5MjU4fHxlbnwwfHx8fA%3D%3D&w=1000&q=80">
                             </div> -->
-                            <h3 class="title" >Bhagyashri Gurav</h3>
                             
                             <div class="description">
                                 <p>
@@ -671,56 +712,62 @@
                                     <i style='font-size:24px' class='fab'>&#xf09a;</i>
                                 </div> -->
                             </div>
+                            <h3 class="title" >-Bhagyashri Gurav</h3>
+
                         </div>
                         <div class="testimonial">
-                            <div class="pic">
+                            <!-- <div class="pic">
                                 <img src="https://images.unsplash.com/photo-1484517186945-df8151a1a871?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwxNzI5MjU4fHxlbnwwfHx8fA%3D%3D&w=1000&q=80">
-                            </div>
-                            <h3 class="title" >Harmesh Patel</h3>
+                            </div> -->
                             
                             <div class="description">
                                 <p>
                                     Would highly recommend this place for a relaxed, laid back vacation. It's away from the hustle, and waking up to the sea view is the best thing ever!. Rooms are tastefully decorated and all the little things are taken care of.
                                 </p>
                             </div>
+                            <h3 class="title" >-Harmesh Patel</h3>
+
                         </div>
                         <div class="testimonial">
                             <!-- <div class="pic">
                                 <img src="https://images.unsplash.com/photo-1484517186945-df8151a1a871?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwxNzI5MjU4fHxlbnwwfHx8fA%3D%3D&w=1000&q=80">
                             </div> -->
-                            <h3 class="title" >Rishikesh Pore</h3>
                             
                             <div class="description">
                                 <p>
                                     Most appealing container rooms i have ever seen. Was flabbergasted by the view couldn't even think go somewhere else for a holiday. Highly recommended. I mean it. Nice people.
                                 </p>
                             </div>
+                            <h3 class="title" >-Rishikesh Pore</h3>
+
                         </div>
 
                         <div class="testimonial">
                             <!-- <div class="pic">
                                 <img src="https://images.unsplash.com/photo-1484517186945-df8151a1a871?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwxNzI5MjU4fHxlbnwwfHx8fA%3D%3D&w=1000&q=80">
                             </div> -->
-                            <h3 class="title" >Manoj Rajsankar</h3>
                             
                             <div class="description">
                                 <p>
                                     A brilliantly made vacation place in the Konkan coast near Devgad. The pebble stay exceeded all expectations of comfort, scenic beauty and convenience. It's easy to reach and has all the needed amenities. Will definitely visit again :)
                                 </p>
                             </div>
+                            <h3 class="title" >-Manoj Rajsankar</h3>
+
                         </div>
 
                         <div class="testimonial">
                             <!-- <div class="pic">
                                 <img src="https://images.unsplash.com/photo-1484517186945-df8151a1a871?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwxNzI5MjU4fHxlbnwwfHx8fA%3D%3D&w=1000&q=80">
                             </div> -->
-                            <h3 class="title" >Puneet Chaurasia</h3>
                             
                             <div class="description">
                                 <p>
                                     This place... is WOW. There are some experiences that cant be valuated through money, this place is just like that. Secluded, Beautiful view right from inside the room, hospitality above expectation, stylish and comfortable space and most importantly, its serene. I definetely recommend it to anyone who's interested in a peaceful stay. Keep it up guys.
                                 </p>
                             </div>
+                            <h3 class="title" >-Puneet Chaurasia</h3>
+
                         </div>
                         
                       
@@ -729,76 +776,7 @@
             </div>
         </div>
 
-        <!-- <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" style="min-height: 660px; padding: 2rem 0;">
-            <div class="carousel-indicators" style="bottom: -15px;">
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active carousel-btn"
-                    aria-label="Slide 1" aria-current="true"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
-                    class="carousel-btn"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
-                    class="carousel-btn"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row customer">
-                        <div class="col col-md-5 col-sm-12 col-12">
-                            <div class="customer-card">
-                                <div class="customer-img"></div>
-                                <div class="customer-text"
-                                    style="display: flex; justify-content:space-between; margin-top: 15px;">
-                                    <h3>Robin Johnson</h3>
-                                    <div class="star">
-                                        <i class="ri-star-fill"></i>
-                                        <i class="ri-star-fill"></i>
-                                        <i class="ri-star-fill"></i>
-                                        <i class="ri-star-fill"></i>
-                                        <i class="ri-star-fill"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-1 col-md-1" ></div>
-                        <div class="col col-md-6 col-sm-12 col-xs-12 review">
-                            <p style="text-align: left;">Would highly recommend this place for a relaxed, laid back
-                                vacation. It's away from the hustle, and waking up to the sea view is the best thing
-                                ever! Kunal does a great job at making sure you are comfortable and is always on his
-                                feet for anything you may need. Rooms are tastefully decorated and all the little things
-                                are taken care of.</p>
-                            <h5 class="date">Posted on : 24 Feb 2021</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item active">
-                    <div class="row customer">
-                        <div class="col col-md-5 col-sm-12 col-12">
-                            <div class="customer-card">
-                                <div class="customer-img"></div>
-                                <div class="customer-text"
-                                    style="display: flex; justify-content:space-between; margin-top: 15px;">
-                                    <h3>Muskan Singh</h3>
-                                    <div class="star">
-                                        <i class="ri-star-fill"></i>
-                                        <i class="ri-star-fill"></i>
-                                        <i class="ri-star-fill"></i>
-                                        <i class="ri-star-fill"></i>
-                                        <i class="ri-star-fill"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-1 col-md-1" ></div>
-                        <div class="col col-md-6 col-sm-12 col-xs-12 review">
-                            <p style="text-align: left;">Would highly recommend this place for a relaxed, laid back
-                                vacation. It's away from the hustle, and waking up to the sea view is the best thing
-                                ever! Kunal does a great job at making sure you are comfortable and is always on his
-                                feet for anything you may need. Rooms are tastefully decorated and all the little things
-                                are taken care of.</p>
-                            <h5 class="date">Posted on : 24 Feb 2021</h5>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-        </div> -->
+        
     </div>
 
     <br>
@@ -894,11 +872,11 @@
                 <div class="col mb-3">
                     <h5 style="color: white;">Quick Links:</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">OUR TEAM</a></li>
+                        <li class="nav-item mb-2"><a href="#teams" class="nav-link p-0 text-muted">OUR TEAM</a></li>
                         <li class="nav-item mb-2"><a href="tel:9930627251" class="nav-link p-0 text-muted">CONTACT</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">REVIEWS</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">JOIN US</a></li>
+                        <li class="nav-item mb-2"><a href="#review-section" class="nav-link p-0 text-muted">REVIEWS</a></li>
+                        
+                        <li class="nav-item mb-2"><a href="#join" class="nav-link p-0 text-muted">JOIN US</a></li>
                     </ul>
                 </div>
 
@@ -957,6 +935,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbw1-3VXCU8zu57bDZzkUtYdL7U4dSKuImRG3rHb0RJrjbj3KVf3vTPfD59cFX_m0lHX/exec'
+            const form = document.forms['Responses']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thank you for joining the community. We will notify you when the campaign starts for you to prebook your stay with us. Cheers! For any further queries, contact us directly on 9930627251"))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>  
+        
     <script src="script.js"></script>
 </body>
 

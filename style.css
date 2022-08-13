@@ -180,8 +180,10 @@ nav {
   width: 100%;
   /* background-color: aqua; */
 }
-
-.form input[type="email"] {
+form{
+  width: 100%;
+}
+form input[type="email"] {
   margin-top: 2rem;
   width: 520px;
   border: none;
@@ -248,8 +250,17 @@ nav {
   width: 72%;
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
   /* align-items: center; */
   justify-content: space-between;
+}
+.desc{
+  width: 55%;
+}
+@media (max-width:500px) {
+  .desc{
+    width: 100%;
+  }
 }
 #right{
   width: 500px;
@@ -340,7 +351,8 @@ nav {
 
 #pebble-stay{
   min-height: 500px;
-  background-color: #f97e78;
+  /* background-color: #f97e78; */
+  background-color:#ffffff; 
   text-align: center;
   color: white;
   padding: 5% 10%;
@@ -367,20 +379,25 @@ nav {
 .team-member-img{
   height: 80% ;
   width: 100%;
-  border: solid 1px pink;
+  /* border: solid 1px pink; */
   /* background-color: #b6fee1; */
   /* margin-bottom: 1rem; */
 }
 .pebble{
   border-radius: 10px;
   margin: 3rem 0;
-  background-color: #FEB9B6;
-  height: 350px;
+  background-color:#ff756e;
+  height: 320px;
  
 }
 
 .pebble p{
-  margin-top: -1rem;
+  /* margin-top: -5rem;  */
+  width: 60%;
+  font-size: 1.3rem;
+  margin: 0 auto;
+  margin-top: -2rem;
+  /* background-color: #c1bbb9; */
 }
 
 .pebbleIcon{
@@ -492,18 +509,28 @@ footer ul>li{
   /* background-color: blue; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  /* justify-content: center; */
+}
+.price h1{
+  text-align: left !important;
 }
 .booking-card{
   /* background-color:#fbfbfb;  */
   position: relative;
-  border: none;
+  border: solid 1px rgba(207, 200, 200, 0.733) !important;
   padding-top: 5rem;
-  padding-bottom: 2.5rem;
-  min-height: 485px;
-  box-shadow: 0px 0 14px 0px rgba(109, 109, 109, 0.043) !important;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1rem !important;
+  min-height: 450px;
+  box-shadow: none !important;
+  /* box-shadow: 0px 0 14px 0px rgba(109, 109, 109, 0.103) !important; */
   /* padding: 3rem 0; */
 
+}
+.card-body h2{
+  text-align: left !important;
 }
 
 .book-btn:hover{
@@ -520,6 +547,8 @@ footer ul>li{
   top: 4%;
   right: 4%;
   color: white;
+  /* border-radius: 3px; */
+  /* border-radius: 100px; */
   /* background-color: yellow; */
   width: 130px;
   height: 36px;
@@ -528,6 +557,8 @@ footer ul>li{
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
+  font-size: 1rem;
 }
 .checkbox img{
   margin-right: 10px;
@@ -573,7 +604,11 @@ footer ul>li{
           box-shadow: 0 5px 50px rgba(0,0,0,0.1);
 }
 
-
+/* @media (max-width:500px) {
+  .testimonial{
+    width: 90% !important;
+  }
+} */
 
 .testimonial{
   text-align: center;
@@ -584,7 +619,7 @@ footer ul>li{
   border: solid 1px rgba(211, 211, 211, 0.9);
   margin: 2rem auto;
   padding: 3rem;
-  height: 200px;
+  min-height: 200px;
   margin-bottom: 4rem;
 }
 
@@ -678,7 +713,9 @@ footer ul>li{
   nav {
     width: 90%;
   }
-
+  form input[type="email"]{
+    width: 400px;
+  }
   .links a {
     margin-left: 15px;
     text-decoration: none;
@@ -823,6 +860,10 @@ footer ul>li{
     padding-top: 9rem;
   }
 
+  /* .mail-section{
+    padding: 0;
+  } */
+
   .mail-section p {
     font-size: 15px;
   }
@@ -857,5 +898,15 @@ footer ul>li{
     height: 450px;
     object-fit: cover;
     border-radius: 15px;
+  }
+
+  .testimonial{
+    width: 100% !important;
+    min-height: 200px;
+  }
+  form input[type="email"]{
+    width: 100%;
+    font-size: 10px;
+    padding: 0 1rem;
   }
 }
