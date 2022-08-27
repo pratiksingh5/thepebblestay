@@ -267,7 +267,7 @@ form input[type="email"] {
   background-color: #fff;
   position: absolute;
   z-index: 999;
-  animation: stay 2.5s 2s cubic-bezier(0.165, 0.84, 0.44, 1) both;
+  animation: stay 1.2s 2s cubic-bezier(0.165, 0.84, 0.44, 1) both;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -275,7 +275,7 @@ form input[type="email"] {
 
 @keyframes stay {
   to {
-    transform: translateX(200%);
+    transform: translateY(-100%);
   }
 }
 
