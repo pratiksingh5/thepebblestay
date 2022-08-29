@@ -889,9 +889,6 @@ footer ul > li {
 }
 
 @media (max-width: 480px) {
-  html,body{
-    overflow-x: hidden;
-  }
   .links {
     display: none;
   }
