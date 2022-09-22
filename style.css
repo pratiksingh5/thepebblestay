@@ -219,6 +219,13 @@ form input[type="email"] {
   font-size: 1.3rem;
 }
 
+/* style="font-size: 32px; line-height:38px;" */
+
+.heads{
+  font-size: 32px;
+  line-height: 38px;
+}
+
 .heading-exp {
   font-size: 4rem;
   text-align: left;
@@ -245,6 +252,9 @@ form input[type="email"] {
 }
 .desc {
   width: 55%;
+}
+.d2{
+  width: 80%;
 }
 @media (max-width: 500px) {
   .desc {
@@ -433,6 +443,11 @@ form input[type="email"] {
 ::-webkit-scrollbar {
   width: 10px;
   background-color: #c1bbb9;
+}
+
+body{
+  scroll-behavior: smooth;
+
 }
 
 ::-webkit-scrollbar-thumb {
@@ -736,6 +751,11 @@ footer ul > li {
     font-size: 12px;
     line-height: 20px;
   }
+  
+.heads{
+  font-size: 24px;
+  line-height: 28px;
+}
   /* .testimonial{ padding: 20px 15px 40px; } */
   /* .testimonial .description{} */
 }
